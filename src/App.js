@@ -1,11 +1,13 @@
 
 import './App.css';
-import  Home  from './Pages/Home';
-
+import Home  from './Pages/Home';
+import Navbar from './Components/Navbar';
+import SplitScreen from './Components/About';
 function App() {
   return (
     <div className="App">
-     <Home/>
+     <Navbar/>
+     <SplitScreen/>
     </div>
   );
 }
