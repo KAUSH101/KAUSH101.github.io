@@ -1,94 +1,117 @@
-import React, { useState } from "react";
-import "./Navbar.css";
+import logo from '../logo/pic.jpg'
+import { ReactNode } from 'react';
 import {
-  FaFacebookSquare,
-  FaGithubSquare,
-  FaInstagramSquare,
-  FaYoutubeSquare,
-  FaLinkedin
-} from "react-icons/fa";
-import { GiHamburgerMenu } from "react-icons/gi";
+  Box,
+  Flex,
+  Avatar,
+  HStack,
+  Link,
+  IconButton,
+  Button,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuDivider,
+  useDisclosure,
+  useColorModeValue,
+  Stack,  useColorMode,
+  Center, Heading, Highlight
+} from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+import { MoonIcon, SunIcon } from '@chakra-ui/icons';
+import { HashLink } from 'react-router-hash-link';
 
-import { NavLink } from "react-router-dom";
+const Links = ['Home', 'About' ,'Skills', 'Projects', 'Contact', 'Resume'];
 
-const Navbar = () => {
-  const [showMediaIcons, setShowMediaIcons] = useState(false);
+const NavLink = ({ children }) => (
+  <Link
+    px={2}
+    py={1}
+    rounded={'md'}
+    _hover={{
+      textDecoration: 'none',
+      bg: useColorModeValue('gray.200', 'gray.700'),
+    }}
+    href={'#'}>
+    {children}
+  </Link>
+);
+
+export default function Navbar() {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
   return (
-    <>
-      <nav className="main-nav">
-        {/* 1st logo part  */}
-        <div className="logo">
-          <h2>
-            <span>K</span>aushik
-            
-          </h2>
-        </div>
+    <div style={{position:'fixed', width:'100%',zIndex:"5"}} 
+    display={{ base: 'none', md: 'flex' }}
+    >
+      <Box bg={useColorModeValue('gray.300', 'gray.900')} px={4} >
+        <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
+          <IconButton
+            size={'md'}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            aria-label={'Open Menu'}
+            display={{ md: 'none' }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          <HStack spacing={8} alignItems={'center'}>
+            <Heading as='h2' size={'lg'} paddingRight={'20px'} color={'blue.700'} ><Highlight query='S.P' styles={{ px: '1', py: '1', bg: 'blue.100', rounded: 'full', color:'blue.400' }}>Kaushik Kumar</Highlight> </Heading>
+            <HStack
+              as={'nav'}
+              spacing={8}
+              display={{ base: 'none', md: 'flex' }}
+              gap={'30px'} 
+              // size={'4xl'}
+              >
+              {/* {Links.map((link) => (
+                <NavLink key={link}>{link}</NavLink>
+              ))} */}
+              {/* <Stack direction={'row'} spacing={6}> */}
+              {/* <Heading as='h4' size={'md'} gap={'30px'} > */}
+            <HashLink to={'#aboutpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>About</Heading></HashLink>
+            <HashLink to={'#skillpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Skill</Heading></HashLink>
+            <HashLink to={'#projectpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Project</Heading></HashLink>
+            <HashLink to={'#contactpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Contact</Heading></HashLink>
+            <Link href={'https://drive.google.com/file/d/1AWPd-4m8x-5cq36hGXj9cFRFUnduIytZ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'blue'}><Highlight query='Resume' styles={{ px: '1', py: '1', bg: '#146ebe', rounded: 'full' }}>Resume</Highlight></Heading></Link>
+          {/* </Stack> */}
+          {/* </Heading> */}
+            </HStack>
+          </HStack>
+          <Flex alignItems={'center'}>
+            <Menu gap={2}>
+            <Button onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon /> : <SunIcon />}
+              </Button>
+              <MenuButton
+                as={Button}
+                rounded={'full'}
+                variant={'link'}
+                cursor={'pointer'}
+                minW={0}>
+                <Avatar
+                //  height={'200px'} width={'200px'}
+                  size={'sm'}
+                  src="https://assets.stickpng.com/images/5a01bb577ca233f48ba627b9.png"
+                />
+              </MenuButton>
+         
+            </Menu>
+          </Flex>
+        </Flex>
 
-        {/* 2nd menu part  */}
-        <div
-          className={
-            showMediaIcons ? "menu-link mobile-menu-link" : "menu-link"
-          }>
-          <ul>
-            <li>
-              <NavLink to="/">Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About me</NavLink>
-            </li>
-            <li>
-              <NavLink to="/skills">Skills</NavLink>
-            </li>
-            <li>
-              <NavLink to="/projects">Projects</NavLink>
-            </li>
-            <li>
-              <NavLink to="/resume">Resume</NavLink>
-            </li>
-            <li>
-              <NavLink to="/contact">Contact me</NavLink>
-            </li>
-          </ul>
-        </div>
- 
-        {/* 3rd social media links */}
-        <div className="social-media">
-          <ul className="social-media-desktop">
-            <li>
-              <a
-                href="https://github.com/KAUSH101"
-                target="_kaushik">
-                <FaGithubSquare className="github" />
-                
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/kaushik-kumar-545149253//"
-                target="_kaushik">
-                <FaLinkedin className="Linkedin" />
-              </a>
-            </li>
-           
-          </ul>
+        {isOpen ? (
+          <Box pb={4} display={{ md: 'none' }}>
+            <Stack as={'nav'} spacing={4}>
+              {Links.map((link) => (
+                <NavLink key={link}>{link}</NavLink>
+              ))}
+            </Stack>
+          </Box>
+        ) : null}
+      </Box>
 
-          {/* hamburget menu start  */}
-          <div className="hamburger-menu">
-            <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
-              <GiHamburgerMenu />
-            </a>
-          </div>
-        </div>
-      </nav>
-
-      {/* hero section  */}
-      {/* <section className="hero-section">
-        <p>Welcome to </p>
-        <h1>Kaushik KUMAR</h1>
-      </section> */}
-    </>
+      {}
+    </div>
   );
-};
-
-export default Navbar;
-
+}
