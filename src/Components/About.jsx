@@ -9,7 +9,7 @@ import {
   useBreakpointValue,Link , Box
 } from '@chakra-ui/react';
 import { MdEmail } from 'react-icons/md';
-// import Calender from './Calender';
+import Calender from './Calender';
 
 export default function SplitScreen() {
   return (
@@ -34,7 +34,7 @@ export default function SplitScreen() {
             >   
             <Button
               // rounded={'full'}
-              bg={'blue.100'}
+              bg={'green'}
              
               variant="ghost"
               size="lg"
@@ -70,7 +70,17 @@ export default function SplitScreen() {
         />
       </Flex>   
     </Stack>
-    {/* <Calender/> */}
+    <Heading color="green" margin="20px" >Days I Code</Heading>
+    <Calender/>
+    
+    <Stack>
+    <p style={{margin:"5px"}} align="center"><img style={{height:"220px",width:"37%"}}  align="center" src="https://github-readme-stats.vercel.app/api?username=KAUSH101&show_icons=true&locale=en" alt="KAUSH101" /></p>
+    <p style={{margin:"5px"}} align="center"><img style={{height:"220px",width:"37%"}} align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=KAUSH101&" alt="KAUSH101" /></p>
+  
+    
+<p style={{margin:"5px"}}  align="center"><img style={{height:"220px",width:"37%"}}  align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=KAUSH101&show_icons=true&locale=en&layout=compact" alt="KAUSH101" /></p>
+</Stack>
+
     <br />
     <br />
     </Box>

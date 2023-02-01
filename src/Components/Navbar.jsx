@@ -56,26 +56,22 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Heading as='h2' size={'lg'} paddingRight={'20px'} color={'blue.700'} ><Highlight query='S.P' styles={{ px: '1', py: '1', bg: 'blue.100', rounded: 'full', color:'blue.400' }}>Kaushik Kumar</Highlight> </Heading>
+            <Heading as='h2' size={'lg'} paddingRight={'20px'} color={'rgb(244,208,85)'} ><Highlight query='' styles={{ px: '1', py: '1', bg: 'blue.100', rounded: 'full', color:'blue.400' }}>KAUSHIK KUMAR</Highlight> </Heading>
             <HStack
               as={'nav'}
               spacing={8}
               display={{ base: 'none', md: 'flex' }}
               gap={'30px'} 
-              // size={'4xl'}
+            
               >
-              {/* {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))} */}
-              {/* <Stack direction={'row'} spacing={6}> */}
-              {/* <Heading as='h4' size={'md'} gap={'30px'} > */}
+            
+             
             <HashLink to={'#aboutpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>About</Heading></HashLink>
             <HashLink to={'#skillpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Skill</Heading></HashLink>
             <HashLink to={'#projectpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Project</Heading></HashLink>
             <HashLink to={'#contactpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Contact</Heading></HashLink>
-            <Link href={'https://drive.google.com/file/d/1AWPd-4m8x-5cq36hGXj9cFRFUnduIytZ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'blue'}><Highlight query='Resume' styles={{ px: '1', py: '1', bg: '#146ebe', rounded: 'full' }}>Resume</Highlight></Heading></Link>
-          {/* </Stack> */}
-          {/* </Heading> */}
+            <Link href={'https://drive.google.com/file/d/1AWPd-4m8x-5cq36hGXj9cFRFUnduIytZ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: 'green', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link>
+         
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>

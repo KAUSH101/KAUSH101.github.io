@@ -7,7 +7,7 @@ import Skills from './Components/Skills';
 import Home from './Pages/Home';
 import Project from './Components/Project';
 // import  Calender  from './Components/Calender';
-
+import TechnicalSkills from './Components/Skills2';
 function App() {
   return (
     <div className="App">
@@ -15,7 +15,7 @@ function App() {
      <Home/>
     <About/>
     <Project/>
-    <Skills/>
+    <TechnicalSkills/>
     <Contact/>
     <Footer/> 
     </div>
