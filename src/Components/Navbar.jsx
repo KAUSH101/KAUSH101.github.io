@@ -1,4 +1,4 @@
-import logo from '../logo/pic.jpg'
+import logo from '../logo/logo.png'
 import { ReactNode } from 'react';
 import {
   Box,
@@ -88,7 +88,7 @@ export default function Navbar() {
                 <Avatar
                 //  height={'200px'} width={'200px'}
                   size={'sm'}
-                  src="https://assets.stickpng.com/images/5a01bb577ca233f48ba627b9.png"
+                  src={logo}
                 />
               </MenuButton>
          
