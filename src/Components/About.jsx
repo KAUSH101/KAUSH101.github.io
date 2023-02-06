@@ -74,11 +74,11 @@ export default function SplitScreen() {
     <Calender/>
     
     <Stack>
-    <p style={{margin:"5px"}} align="center"><img style={{height:"220px",width:"37%"}}  align="center" src="https://github-readme-stats.vercel.app/api?username=KAUSH101&show_icons=true&locale=en" alt="KAUSH101" /></p>
-    <p style={{margin:"5px"}} align="center"><img style={{height:"220px",width:"37%"}} align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=KAUSH101&" alt="KAUSH101" /></p>
+    <Text style={{margin:"5px"}} align="center"><Image style={{height:"220px",width:"100%"}}  align="center" src="https://github-readme-stats.vercel.app/api?username=KAUSH101&show_icons=true&locale=en" alt="KAUSH101" /></Text>
+    <Text style={{margin:"5px"}} align="center"><Image style={{height:"220px",width:"100%"}} align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=KAUSH101&" alt="KAUSH101" /></Text>
   
     
-<p style={{margin:"5px"}}  align="center"><img style={{height:"220px",width:"37%"}}  align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=KAUSH101&show_icons=true&locale=en&layout=compact" alt="KAUSH101" /></p>
+<Text style={{margin:"5px"}}  align="center"><Image style={{height:"220px",width:"100%"}}  align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=KAUSH101&show_icons=true&locale=en&layout=compact" alt="KAUSH101" /></Text>
 </Stack>
 
     <br />
