@@ -167,7 +167,7 @@ const Project = () => {
                   >
                   </Button>
                   </Link>
-                  <Link href={'https://incredible-begonia-aec486.netlify.app/index.html'} target="_blank" >
+                  <Link href={'https://my-fashion-cart.netlify.app/index.html'} target="_blank" >
                   <Button rounded={'full'}>Live</Button>
                   </Link>
                 </Stack>
