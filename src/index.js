@@ -5,18 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter } from 'react-router-dom';
-import ScrollContextProvider from './Context/ScrollContext';
-import MyThemeContextProvider from './Context/themeContext';
+// import ScrollContextProvider from './Context/ScrollContext';
+// import MyThemeContextProvider from './Context/themeContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <ChakraProvider>
   <BrowserRouter>
-    <ScrollContextProvider>
-      <MyThemeContextProvider>
+   
         <App />
-      </MyThemeContextProvider>
-    </ScrollContextProvider>
+      
   </BrowserRouter>
 </ChakraProvider>
 );

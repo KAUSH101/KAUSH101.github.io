@@ -11,10 +11,10 @@ import {
 import { MdEmail } from 'react-icons/md';
 import Calender from './Calender';
 
-export default function SplitScreen() {
+export default function About() {
   return (
-    <Box boxShadow={'2xl'} width={'95%'} margin={'auto'}>
-    <Heading fontSize={{ base: '3xl', md: '5xl', lg: '7xl' }} _hover={{transform: 'scale(1.05)', }}>ABOUT</Heading>
+    <Box boxShadow={'2xl'} width={'100%'} margin={'auto'}>
+    <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} _hover={{transform: 'scale(1.05)', }}>ABOUT</Heading>
     <Stack minH={'70vh'} direction={{ base: 'column', md: 'row' }} id='aboutpage' >
       <Flex p={8} flex={1} justify={'center'}>
         <Stack spacing={6} w={'full'} maxW={'lg'}>
@@ -22,15 +22,15 @@ export default function SplitScreen() {
          
             <br />{' '}
             <br />
-            <Text fontSize={{ base: 'md', lg: 'lg' }} color={'blue.400'} lineHeight={'25px'} >
-             I am a Full Stack Web Developer, passionate about building digital products that improve everyday experience for people. 
+            <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'} lineHeight={'25px'} >
+            Passionate Full Stack Web Developer with a focus on the MERN stack, knowledge of data structures and algorithms, and aspirational Frontend Web Developer who is curious about new opportunities in challenging environments.
             
             </Text>{' '}
           </Heading>
         
           <Stack direction={{ base: 'column', md: 'column' }} spacing={4} justifyContent={'center'}>
-          <Link href="Kaushik-Kumar-Resume (1).pdf" smooth 
-              download={'Kaushik-Kumar-Resume (1).pdf'} textDecoration='null'
+          <Link href="FW21_0849-Kaushik-Kumar-Resume.pdf" smooth 
+              download={'FW21_0849-Kaushik-Kumar-Resume.pdf'} textDecoration='null'
             >   
             <Button
               // rounded={'full'}
@@ -46,6 +46,7 @@ export default function SplitScreen() {
             </Button>
             </Link>
             <Button
+            
               rounded={'full'}
               // bg={'blue.400'}
               // color={'white'}
@@ -70,7 +71,7 @@ export default function SplitScreen() {
         />
       </Flex>   
     </Stack>
-    <Heading color="green" margin="20px" >Days I Code</Heading>
+    <Heading marginBottom={'10px'} fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} _hover={{transform: 'scale(1.05)', }}>Days I Code</Heading>
     <Calender/>
     
     <Stack>

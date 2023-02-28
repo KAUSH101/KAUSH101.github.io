@@ -61,9 +61,9 @@ export default function Contact() {
     setMsg("")
   }
   // bg="#9DC4FB"
-  // <Box boxShadow={'2xl'} width={'95%'} margin={'auto'}></Box>
+  // <Box boxShadow={'2xl'} width={'100%'} margin={'auto'}></Box>
   return (
-    <Container  maxW="full" mt={0} centerContent overflow="hidden" id='contactpage' boxShadow={'2xl'} width={'95%'} margin={'auto'}>
+    <Container  maxW="full" mt={0} centerContent overflow="hidden" id='contactpage' boxShadow={'2xl'} width={'100%'} margin={'auto'}>
       <Flex>
         <Box
         _hover={{transform: 'scale(1.01)', }}
@@ -78,7 +78,7 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                  <Heading>Get In Touch</Heading>
+                <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} _hover={{transform: 'scale(1.05)', }}>GET IN TOUCH</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
                     Got a project?<br /> Reach out and let's work together on something exciting.<br />
                   </Text>
@@ -98,11 +98,11 @@ export default function Contact() {
                       <Button
                         size="md"
                         height="48px"
-                        width="200px"
+                        width="260px"
                         variant="ghost"
                         // color="#DCE2FF"
                         color="black"
-                        _hover={{ border: '2px solid #1C6FEB' }}
+                        // _hover={{ border: '2px solid #1C6FEB' }}
                         leftIcon={<MdEmail color="#1970F1" size="20px" />}>
                         kaushikkumar7070@gmail.com
                       </Button>
@@ -113,24 +113,31 @@ export default function Contact() {
                         variant="ghost"
                         // color="#DCE2FF"
                         color="black"
-                        _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdLocationOn color="black" size="20px" />}>
+                        
+                        leftIcon={<MdLocationOn color="blue" size="20px" />}>
                         Barh, Bihar, India
                       </Button>
                     </VStack>
                   </Box>
                   <Stack direction={{ base: 'column', md: 'row' }} spacing={4} paddingLeft={'30px'} align={'center'}>
-                    
+                 
+
+                    <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'}
+                    smooth  target="_blank"
+                    >
                     <Button
                       // rounded={'full'}
                       bg={'blue.400'}
                       color={'white'}
                       _hover={{
-                        bg: 'blue.500',
+                        bg: 'green',
+                        
                       }}>
                       Resume
-                    </Button>
+                    </Button></Link>
+                   
                     {/* </Link> */}
+                    <Flex>
                     <Link href={'https://github.com/KAUSH101'}>
                       <Button
                         variant="ghost"
@@ -157,6 +164,7 @@ export default function Contact() {
                         _hover={{ bg: '#0D74FF' }}
                         boxSize='40px' colorScheme='mail' leftIcon={< SiGmail size="30px" />}> </Button>
                     </Link>
+                    </Flex>
                     {/* <Button rounded={'full'}>How It Works</Button> */}
                   </Stack>
                 </Box>

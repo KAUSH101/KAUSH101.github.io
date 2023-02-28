@@ -6,13 +6,14 @@ import {
     Stack,
     Text,
     useColorModeValue,
-    VisuallyHidden,
+    VisuallyHidden,Heading
   } from '@chakra-ui/react';
   import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
   import { HashLink } from 'react-router-hash-link';
+ 
 
-//   const Logo = (props) => {
+
 //     return (
 //       <svg
 //         height={32}
@@ -60,24 +61,30 @@ import {
   
   export default function Footer() {
     return (
-      <Box 
+      <Box width={"100%"}
         // bg={useColorModeValue('gray.50', 'gray.900')}
         color={useColorModeValue('gray.700', 'gray.200')}>
         <Container
           as={Stack}
           maxW={'6xl'}
           py={4}
-          spacing={4}
+          spacing={{lg:"6",md:"4",sm:"3"}}
           justify={'center'}
           align={'center'}>
           {/* <Logo /> */}
-          <Stack direction={'row'} spacing={6}>
-            <HashLink to={'#homepage'} smooth>Home</HashLink>
-            <HashLink to={'#aboutpage'} smooth>About</HashLink>
-            <HashLink to={'#skillpage'}>Skill</HashLink>
-            <HashLink to={'#projectpage'}>Project</HashLink>
-            <HashLink to={'#contactpage'}>Contact</HashLink>
-            <HashLink to={'#resume'}>Resume</HashLink>
+          <Stack justifyContent={'space-around'} width={'100%'}  direction={'row'} spacing={{lg:"6",md:"4",sm:"3"}}>
+            <Text  ><HashLink to={'#homepage'} smooth>Home</HashLink></Text>
+            <Text margin={'3px'}><HashLink  to={'#aboutpage'} smooth>About</HashLink></Text>
+            <Text margin={'3px'}><HashLink to={'#skills'}smooth>Skill</HashLink></Text>
+            <Text margin={'3px'}><HashLink to={'#projectpage'}smooth>Project</HashLink></Text>
+            <Text margin={'3px'}>  <HashLink to={'#contactpage'}smooth>Contact</HashLink></Text>
+            
+         
+            
+          
+            {/* <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} target="_blank">   <Text><HashLink to={'#resume'} smooth>Resume</HashLink></Text></Link> */}
+            <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" >Resume</Link>
+            
           </Stack>
         </Container>
   
@@ -94,22 +101,12 @@ import {
             py={4}
             direction={{ base: 'column', md: 'row' }}
             spacing={4}
-            justify={{ base: 'center', md: 'space-between' }}
+            justify={{ base: 'center', md: 'center' }}
             align={{ base: 'center', md: 'center' }}
             
             >
             <Text>Designed & Built by Kaushik Kumar, © 2023 All rights reserved</Text>
-            {/* <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
-              </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram />
-              </SocialButton>
-            </Stack> */}
+        
           </Container>
         </Box>
       </Box>
