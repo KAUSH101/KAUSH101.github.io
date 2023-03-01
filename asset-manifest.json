@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.29cbd906.css",
-    "main.js": "/static/js/main.c8ac4703.js",
+    "main.js": "/static/js/main.f9055a2c.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/shoeland.png": "/static/media/shoeland.f59fb804b63b882ac5bf.png",
     "static/media/appletv.PNG": "/static/media/appletv.8146b184fc56e993adc4.PNG",
@@ -11,11 +11,11 @@
     "static/media/pic.jpg": "/static/media/pic.9f1190405d03c741865d.jpg",
     "index.html": "/index.html",
     "main.29cbd906.css.map": "/static/css/main.29cbd906.css.map",
-    "main.c8ac4703.js.map": "/static/js/main.c8ac4703.js.map",
+    "main.f9055a2c.js.map": "/static/js/main.f9055a2c.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.29cbd906.css",
-    "static/js/main.c8ac4703.js"
+    "static/js/main.f9055a2c.js"
   ]
 }
