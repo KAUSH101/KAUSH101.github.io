@@ -23,7 +23,7 @@ const Project = () => {
     <Heading  fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} _hover={{transform: 'scale(1.05)', }}>PROJECTS</Heading> <br /><br />    
       <Center    gap={'20px'}  >
       <Stack direction={{ base: 'column', md: 'row' }}>   
-      <Box width={{ base: '100%', md: '50%', lg: '50%' }}   border={"1px solid red"} justifyContent={'space-around'}  >
+      <Box width={{ base: '100%', md: '50%', lg: '50%' }}   justifyContent={'space-around'}  >
       <Center py={12}>
             <Box
               role={'group'}
@@ -197,7 +197,7 @@ const Project = () => {
             </Box>
           </Center>
           </Box>  
-          <Box width={{ base: '100%', md: '50%', lg: '50%' }}   border={"1px solid green"} justifyContent={'space-around'} >
+          <Box width={{ base: '100%', md: '50%', lg: '50%' }}   justifyContent={'space-around'} >
           <Center py={12}>
             <Box
               role={'group'}
