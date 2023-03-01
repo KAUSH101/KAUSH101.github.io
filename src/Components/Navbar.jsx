@@ -41,6 +41,9 @@ const NavLink = ({ children }) => (
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const handleClick = () => {
+    window.open("https://drive.google.com/uc?export=download&id=1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ", "_blank");
+  };
 
   return (
     <div style={{position:'fixed', width:'100%',zIndex:"5"}} 
@@ -71,7 +74,21 @@ export default function Navbar() {
             <HashLink to={'#skills'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Skills</Heading></HashLink>
             <HashLink to={'#projectpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Projects</Heading></HashLink>
             <HashLink to={'#contactpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Contact</Heading></HashLink>
-            <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link>
+            {/* <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link> */}
+            <a target="_blank" href="https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing" onClick={handleClick}>
+            <Button
+              // rounded={'full'}
+              bg={'#d08768'}
+              color={'white'}
+              variant="ghost"
+              size="md"
+              isRound={true}
+              _hover={{ bg: '', transform: 'scale(1.05)'}}
+              borderRadius='full' 
+              >
+               Resume
+            </Button>
+            </a>
          
             </HStack>
           </HStack>
@@ -128,7 +145,22 @@ export default function Navbar() {
               <button > </button>
               CONTACT
             </Heading></HashLink>
-            <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link>
+            {/* <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link> */}
+            <a target="_blank" href="https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing" onClick={handleClick}>
+            <Button
+              // rounded={'full'}
+              bg={'#d08768'}
+             color={'white'}
+              variant="ghost"
+              size="md"
+              isRound={true}
+              _hover={{ bg: '', transform: 'scale(1.05)'}}
+              borderRadius='full' 
+              >
+               Resume
+            </Button>
+            </a>
+            
           </Stack>
         </Box>
       ) : null}
