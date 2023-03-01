@@ -67,8 +67,9 @@ export default function About() {
       </Flex>
       <Flex flex={1} justifyContent={'center'}>
         <Image
-          height={'380px'}
-          width={'350px'}
+        borderRadius={'12px'}
+          height={{base:"330px", md:"360px", lg:"380px"}}
+          width={{base:"280px", md:"320px", lg:"350px"}}
           alt={'Login Image'}
           objectFit={'cover'}
           _hover={{transform: 'scale(1.05)', }}

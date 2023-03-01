@@ -8,7 +8,7 @@ import ReactTooltip from "react-tooltip";
      <GitHubCalendar 
     username="KAUSH101" 
    
-    fontSize={16}
+    fontSize={12}
     blockSize={20}
     style={{margin:'auto', width:'80%'}}
    
