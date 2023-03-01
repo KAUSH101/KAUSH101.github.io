@@ -16,16 +16,18 @@ export default function About() {
     window.open("https://drive.google.com/uc?export=download&id=1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ", "_blank");
   };
   return (
-    <Box boxShadow={'2xl'} width={'100%'} margin={'auto'}>
+    <Box id='aboutpage' boxShadow={'2xl'} width={'100%'} margin={'auto'}>
     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} _hover={{transform: 'scale(1.05)', }}>ABOUT</Heading>
-    <Stack minH={'70vh'} direction={{ base: 'column', md: 'row' }} id='aboutpage' >
+    <Stack minH={'70vh'} direction={{ base: 'column', md: 'row' }}  >
       <Flex p={8} flex={1} justify={'center'}>
         <Stack spacing={6} w={'full'} maxW={'lg'}>
           <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }}>
          
             <br />{' '}
             <br />
-            <Text fontSize={{ base: 'md', lg: 'lg' }} color={'white'} lineHeight={'25px'} >
+           
+            {/* fontSize={{ base: 'base', lg: 'md', md:'md' }} color={'gray'} lineHeight={'25px'} */}
+            <Text   fontSize={{ base: '15px', md:"md", lg: 'md' }} color={'grey.700'} >
             Passionate Full Stack Web Developer with a focus on the MERN stack, knowledge of data structures and algorithms, and aspirational Frontend Web Developer who is curious about new opportunities in challenging environments.
             
             </Text>{' '}

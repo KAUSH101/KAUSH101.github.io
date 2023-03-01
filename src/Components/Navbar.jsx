@@ -1,5 +1,5 @@
 import logo from '../logo/logo.png'
-import { ReactNode } from 'react';
+import { ReactNode,useRef } from 'react';
 import {
   Box,
   Flex,
@@ -99,14 +99,39 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
-          <Box pb={4} display={{ lg: 'none' }}>
-            <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
-            </Stack>
-          </Box>
-        ) : null}
+        <Box pb={4}  >
+          <Stack as={'nav'} spacing={4} onClick={isOpen ? onClose : onOpen} >
+            <HashLink to={'#homepage'} offset={-100} smooth={true} spy={true}>
+              <Heading size={'md'} color={'gray.700'} gap={'30px'} 
+                fontFamily={'lorum'}
+                _hover={{ transform: 'scale(1.01)' }}>
+                <button > </button>
+                HOME
+              </Heading></HashLink>
+            <HashLink to={'#aboutpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'}  fontFamily={'lorum'}
+              _hover={{ transform: 'scale(1.01)' }}>
+              <button ></button>
+              ABOUT
+            </Heading></HashLink>
+            <HashLink to={'#skills'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} 
+              _hover={{ transform: 'scale(1.01)' }}>
+              <button > </button>
+              SKILL
+            </Heading></HashLink>
+            <HashLink to={'#projectpage'} offset={-100} smooth={true} spy={true}><Heading color={'gray.700'} size={'md'} gap={'30px'}  fontFamily={'lorum'}
+              _hover={{ transform: 'scale(1.01)' }}>
+              <button > </button>
+              PROJECT
+            </Heading></HashLink>
+            <HashLink to={'#contactpage'} offset={-100} smooth={true} spy={true} ><Heading color={'gray.700'} size={'md'} gap={'30px'} fontFamily={'lorum'} 
+              _hover={{ transform: 'scale(1.01)' }}>
+              <button > </button>
+              CONTACT
+            </Heading></HashLink>
+            <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link>
+          </Stack>
+        </Box>
+      ) : null}
       </Box>
 
       {}
