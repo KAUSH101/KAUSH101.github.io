@@ -12,6 +12,9 @@ import { MdEmail } from 'react-icons/md';
 import Calender from './Calender';
 
 export default function About() {
+  const handleClick = () => {
+    window.open("https://drive.google.com/uc?export=download&id=1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ", "_blank");
+  };
   return (
     <Box boxShadow={'2xl'} width={'100%'} margin={'auto'}>
     <Heading fontSize={{ base: '3xl', md: '4xl', lg: '5xl' }} _hover={{transform: 'scale(1.05)', }}>ABOUT</Heading>
@@ -29,9 +32,10 @@ export default function About() {
           </Heading>
         
           <Stack direction={{ base: 'column', md: 'column' }} spacing={4} justifyContent={'center'}>
-          <Link href="FW21_0849-Kaushik-Kumar-Resume.pdf" smooth 
-              download={'FW21_0849-Kaushik-Kumar-Resume.pdf'} textDecoration='null'
-            >   
+          {/* FW21_0849-Kaushik-Kumar-Resume.pdf */}
+          {/* <Link smooth  target="_blank" href="https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing" > */}
+            
+            <a target="_blank" href="https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing" onClick={handleClick}>
             <Button
               // rounded={'full'}
               bg={'green'}
@@ -44,7 +48,8 @@ export default function About() {
               >
                Download Resume
             </Button>
-            </Link>
+            </a>
+            {/* </Link> */}
             <Button
             
               rounded={'full'}
@@ -62,7 +67,7 @@ export default function About() {
       </Flex>
       <Flex flex={1} justifyContent={'center'}>
         <Image
-          height={'350px'}
+          height={'380px'}
           width={'350px'}
           alt={'Login Image'}
           objectFit={'cover'}
