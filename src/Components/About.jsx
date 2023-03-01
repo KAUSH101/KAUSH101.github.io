@@ -38,13 +38,13 @@ export default function About() {
             <a target="_blank" href="https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing" onClick={handleClick}>
             <Button
               // rounded={'full'}
-              bg={'green'}
+              bg={'#d08768'}
              
               variant="ghost"
               size="lg"
               isRound={true}
-              _hover={{ bg: '#0D74FF', transform: 'scale(1.05)'}}
-              borderRadius='full'
+              _hover={{ bg: '', transform: 'scale(1.05)'}}
+              borderRadius='full' 
               >
                Download Resume
             </Button>
@@ -86,6 +86,7 @@ export default function About() {
     
 <Text style={{margin:"5px"}}  align="center"><Image style={{height:"220px",width:"100%"}}  align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=KAUSH101&show_icons=true&locale=en&layout=compact" alt="KAUSH101" /></Text>
 </Stack>
+
 
     <br />
     <br />

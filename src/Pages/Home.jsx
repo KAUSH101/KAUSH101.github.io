@@ -44,7 +44,7 @@ export default function Home() {
           <Heading size={"md"} lineHeight='tall'>
             <Highlight
               query={['Kaushik', 'Kumar']}
-              styles={{ px: '2', py: '1', rounded: 'full', bg: 'green',color:'white',fontSize:'md' }}
+              styles={{ px: '2', py: '1', rounded: 'full', bg: '#d08768',color:'white',fontSize:'md' }}
             >
               I'm Kaushik Kumar
             </Highlight>

@@ -69,7 +69,7 @@ export default function Contact() {
         _hover={{transform: 'scale(1.01)', }}
           // bg="#02054B"
           border={'2px'}
-          borderColor={'blue.200'}
+          borderColor={'#d08768'}
           color="black"
           borderRadius="lg"
           m={{ sm: 4, md: 16, lg: 10 }}
@@ -78,7 +78,7 @@ export default function Contact() {
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
               <WrapItem>
                 <Box>
-                <Heading fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} _hover={{transform: 'scale(1.05)', }}>GET IN TOUCH</Heading>
+                <Heading color={"#d08768"} fontSize={{ base: '2xl', md: '3xl', lg: '4xl' }} _hover={{transform: 'scale(1.05)', }}>GET IN TOUCH</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
                     Got a project?<br /> Reach out and let's work together on something exciting.<br />
                   </Text>
@@ -92,7 +92,7 @@ export default function Contact() {
                         // color="#DCE2FF"
                         color="black"
                         _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdPhone color="#1970F1" size="20px" />}>
+                        leftIcon={<MdPhone color="#d08768" size="20px" />}>
                         +91-7070266595
                       </Button>
                       <Button
@@ -103,7 +103,7 @@ export default function Contact() {
                         // color="#DCE2FF"
                         color="black"
                         // _hover={{ border: '2px solid #1C6FEB' }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}>
+                        leftIcon={<MdEmail color="#d08768" size="20px" />}>
                         kaushikkumar7070@gmail.com
                       </Button>
                       <Button
@@ -114,7 +114,7 @@ export default function Contact() {
                         // color="#DCE2FF"
                         color="black"
                         
-                        leftIcon={<MdLocationOn color="blue" size="20px" />}>
+                        leftIcon={<MdLocationOn color="#d08768" size="20px" />}>
                         Barh, Bihar, India
                       </Button>
                     </VStack>
@@ -127,10 +127,10 @@ export default function Contact() {
                     >
                     <Button
                       // rounded={'full'}
-                      bg={'blue.400'}
+                      bg={'#d08768'}
                       color={'white'}
                       _hover={{
-                        bg: 'green',
+                        bg: '#d08768',
                         
                       }}>
                       Resume
@@ -143,7 +143,7 @@ export default function Contact() {
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
+                        _hover={{ bg: '#d08768' }}
                         // borderRadius='full'
                         boxSize='40px' leftIcon={<FaGithub size="30px" />}>  </Button>
                     </Link>
@@ -152,7 +152,7 @@ export default function Contact() {
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
+                        _hover={{ bg: '#d08768' }}
                         boxSize='40px' colorScheme='linkedin' leftIcon={< FaLinkedin size="30px" />}>
                       </Button>
                     </Link>
@@ -161,7 +161,7 @@ export default function Contact() {
                         variant="ghost"
                         size="lg"
                         isRound={true}
-                        _hover={{ bg: '#0D74FF' }}
+                        _hover={{ bg: '#d08768' }}
                         boxSize='40px' colorScheme='mail' leftIcon={< SiGmail size="30px" />}> </Button>
                     </Link>
                     </Flex>
@@ -207,7 +207,7 @@ export default function Contact() {
                       <FormControl id="name" >
                         <Button
                           variant="solid"
-                          bg="#0D74FF"
+                          bg="#d08768"
                           color="white"
                           _hover={{}}
                           onClick={handleSubmit}  >

@@ -57,7 +57,7 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
-            <Heading marginLeft={'5px'} as='h2' size={{base:"md",sm:"lg"}} paddingRight={'20px'} color={'green'} ><Highlight query='' styles={{ px: '1', py: '1', bg: 'green', rounded: 'full', color:'blue.400' }}>KAUSHIK KUMAR</Highlight> </Heading>
+            <Heading marginLeft={'5px'} as='h2' size={{base:"md",sm:"lg"}} paddingRight={'20px'} color={'#d08768'} ><Highlight query='' styles={{ px: '1', py: '1', bg: 'green', rounded: 'full', color:'blue.400' }}>KAUSHIK KUMAR</Highlight> </Heading>
             <HStack
               as={'nav'}
               spacing={8}
@@ -71,7 +71,7 @@ export default function Navbar() {
             <HashLink to={'#skills'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Skills</Heading></HashLink>
             <HashLink to={'#projectpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Projects</Heading></HashLink>
             <HashLink to={'#contactpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Contact</Heading></HashLink>
-            <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: 'green', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link>
+            <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link>
          
             </HStack>
           </HStack>
