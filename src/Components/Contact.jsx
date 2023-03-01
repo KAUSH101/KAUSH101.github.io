@@ -138,7 +138,7 @@ export default function Contact() {
                    
                     {/* </Link> */}
                     <Flex>
-                    <Link href={'https://github.com/KAUSH101'}>
+                    <Link target="_blank" href={'https://github.com/KAUSH101'}>
                       <Button
                         variant="ghost"
                         size="lg"
@@ -147,7 +147,7 @@ export default function Contact() {
                         // borderRadius='full'
                         boxSize='40px' leftIcon={<FaGithub size="30px" />}>  </Button>
                     </Link>
-                    <Link href={'https://www.linkedin.com/in/kaushik-kumar-545149253/'}>
+                    <Link target="_blank" href={'https://www.linkedin.com/in/kaushik-kumar-545149253/'}>
                       <Button
                         variant="ghost"
                         size="lg"
@@ -156,7 +156,7 @@ export default function Contact() {
                         boxSize='40px' colorScheme='linkedin' leftIcon={< FaLinkedin size="30px" />}>
                       </Button>
                     </Link>
-                    <Link href={'mailto:surya101294@gmail.com'}>
+                    <Link target="_blank" href={'mailto:surya101294@gmail.com'}>
                       <Button
                         variant="ghost"
                         size="lg"
