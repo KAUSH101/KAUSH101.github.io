@@ -263,7 +263,7 @@ const Project = () => {
         </Flex>
 
                 <Stack direction={'row'} align={'center'}>
-                <Link href={'https://github.com/vicky-ops/aquatic-beef-7375'} target="_blank">
+                <Link href={'https://github.com/KAUSH101/BharatMart-india-mart-clone-'} target="_blank">
                   <Button
                     rounded={'full'}
                     // bg={'blue.400'}
@@ -275,7 +275,7 @@ const Project = () => {
                   >
                   </Button>
                   </Link>
-                  <Link href={'https://63ce3165cf78ab1476a88a14--glittery-paletas-178038.netlify.app/'} target="_blank">
+                  <Link href={'https://bharatmart-one.vercel.app/'} target="_blank">
                   <Button rounded={'full'}>Live</Button>
                   </Link>
                 </Stack>
