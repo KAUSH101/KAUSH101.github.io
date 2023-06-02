@@ -42,7 +42,7 @@ export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   const handleClick = () => {
-    window.open("https://drive.google.com/uc?export=download&id=1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ", "_blank");
+    window.open("https://drive.google.com/uc?export=download&id=1JuQae5Yb98GO6uwkuZmmzbZ3Mmtavf-H", "_blank");
   };
 
   return (
@@ -75,7 +75,7 @@ export default function Navbar() {
             <HashLink to={'#projectpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Projects</Heading></HashLink>
             <HashLink to={'#contactpage'} smooth><Heading as='h4' size={'md'} gap={'30px'}>Contact</Heading></HashLink>
             {/* <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link> */}
-            <a target="_blank" href="https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing" onClick={handleClick}>
+            <a target="_blank" href="https://drive.google.com/file/d/1JuQae5Yb98GO6uwkuZmmzbZ3Mmtavf-H/view?usp=sharing" onClick={handleClick}>
             <Button
               // rounded={'full'}
               bg={'#d08768'}
@@ -146,7 +146,7 @@ export default function Navbar() {
               CONTACT
             </Heading></HashLink>
             {/* <Link href={'https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing'} smooth  target="_blank" ><Heading as='h4' size={'md'} color={'white'}><Highlight query='Resume' styles={{ px: '2', py: '2', bg: '#d08768', rounded: 'full',color:"white"}}>Resume</Highlight></Heading></Link> */}
-            <a target="_blank" href="https://drive.google.com/file/d/1r0ObwvMf1Qv_yDmZtgBaPqRV1fR9XsyQ/view?usp=sharing" onClick={handleClick}>
+            <a target="_blank" href="https://drive.google.com/file/d/1JuQae5Yb98GO6uwkuZmmzbZ3Mmtavf-H/view?usp=sharing" onClick={handleClick}>
             <Button
               // rounded={'full'}
               bg={'#d08768'}
